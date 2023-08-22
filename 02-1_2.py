@@ -11,7 +11,7 @@ while i < 5:
     i = i + 1
     print(i)
 print('='*50)
-def add(a, b):
+def add(a, b): # def : 함수를 정의한다.
     return a + b
 n = add(3, 4)
 print(n)
@@ -88,26 +88,26 @@ a="A is %s%%." %92.124
 print(a)
 b="%10s" % "hi"#전체 길이가 10개인 문자열 공간에서 대입되는 값을 오른쪽으로 정렬하고, 그 앞의 나머지 공간은 공백으로 남겨둬라.
 print(b)
-A="%0.3f" %3.141592
+A="%0.3f" %3.141592 #소수점 3번째 까지만 표시해라.
 print(A)
 print(line)
-"숫자 바로 대입하기"
+#숫자 바로 대입하기
 print("I eat {0} apples".format(6))
 print("I eat %d apples." % 33)
-"2개 이상의 값"
+#2개 이상의 값
 숫자 = 3
 날짜 = 2
 print("I eat {0} apples and {1} day".format(숫자, 날짜))
-"{0}, {1}, {2} 순의 순서로 .format(a, b, c)에서 a b c가 대입된다."
+#{0}, {1}, {2} 순의 순서로 .format(a, b, c)에서 a b c가 대입된다.
 print("{0:<10}".format("hi")) # 총 10자릿수를 만들고 치환되는 문자열을 왼쪽에 정렬한다.
 print("{0:>10}".format("hi"))
-print("{0:^10}".format("hi"))
+print("{0:^10}".format("hi")) # 가운데 정렬
 print("{0:=^10}".format("hi")) # 정렬 위치 앞에 오는 값으로 공백을 채운다.
 print("{0:@^10}".format("hi"))
 print("{0:10.4f}".format(3.42134234)) # 총 10자릿수를 만들고, 소수점 4번째 미만까지 표시한다.
 print("{{   and   }}".format())
 print(line)
-"f문자열 포매팅 f'{}' > {}안의 값을 정의된 값으로 바꾼다."
+#f문자열 포매팅 f'{}' > {}안의 값을 정의된 값으로 바꾼다.
 name = "김준철"
 age = 26
 print(f'나의 이름은 {name}입니다. 나이는 {age+1}입니다.')
@@ -116,7 +116,7 @@ print(f'나의 이름은 {d["name"]}입니다. 나이는 {d["age"]}입니다.')
 print(f'{"hi":<10}')
 print(f'{"hi":>10}')
 print(f'{"hi":^10}')
-print(f'{"python":!^12}')
+print(f'{"python":!^12}') # 12 : 12자리, ^ : 가운데 정렬 ! : !로 공백 채우기       
 '''
 문자열 내장 함수
 count : 문자 개수 세기
@@ -126,22 +126,19 @@ a.count('b')
 '''
 a = "hobby"
 print(a.count('b'))
-'''
-a.find('b) : 위치 알려주기
-a = "python is the best choice"
-a.find('b')
-a.find('k') > -1 : 문자열이 포함되지 않았다는 뜻.
-'''
+
+#a.find('b) : 위치 알려주기
+#a = "python is the best choice"
+#a.find('b')
+#a.find('k') > -1 : 문자열이 포함되지 않았다는 뜻.
+
 a = "python is the best choice"
 print(a.find('b'))
-'''
-a.index('b') : 위치 알려주기.
-find랑 기본적으로 같지만, 찾는 문자가 존재하지 않으면 오류가 발생함
-
-join : 문자열 삽입
-'''
+# a.index('b') : 위치 알려주기.
+# find랑 기본적으로 같지만, 찾는 문자가 존재하지 않으면 오류가 발생함
+#join : 문자열 삽입
 print(",".join('abcd'))
-'upper 소문자를 대문자로 바꾸기'
+#upper 소문자를 대문자로 바꾸기
 a="hi"
 print(a.upper())
 'lovwer 대문자를 소문자로 바꾸기'
